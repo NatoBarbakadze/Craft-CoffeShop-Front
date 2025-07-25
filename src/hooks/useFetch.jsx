@@ -35,5 +35,4 @@ const useFetch = ({ url, method }) => {
 
   return { response, error, loading, resendRequest: onFetch };
 };
-
 export default useFetch;

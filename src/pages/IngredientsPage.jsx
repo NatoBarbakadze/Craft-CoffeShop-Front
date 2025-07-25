@@ -7,8 +7,6 @@ import styled from "styled-components";
 import QRIconImg from "../assets/Fotos/qr-icon.png";
 import { useNavigate } from "react-router-dom";
 
-
-
 const Section = styled.section`
   width: 1217px;
   height: max-content;
@@ -38,7 +36,6 @@ const CoffeeInfoWrapper = styled.div`
   width: 222px;
   height: 62px;
   padding: 14px 17px 16px 24px;
-
 `;
 
 const IngredientsPage=()=>{
@@ -91,8 +88,6 @@ const IngredientsPage=()=>{
   if (error) return <p>Error loading ingredients: {error.message}</p>;
 
 
-
-
  return (
 
   <>   
@@ -105,7 +100,6 @@ const IngredientsPage=()=>{
       </HeroContent>
     </HeroSection>
 
-
     <Section>
       <HeaderMini>
           <Title>All Ingredients</Title>
@@ -115,7 +109,6 @@ const IngredientsPage=()=>{
       </HeaderMini>
 
       <CoffeeGrid>
-
         {ingredients?.map((ing) => {
           const price = ing.data?.price || ing.price;
           const name = ing.data?.name || ing.name;
@@ -140,7 +133,7 @@ const IngredientsPage=()=>{
     
     </Section>
   </>
- 
+
   )
 }
 export default IngredientsPage

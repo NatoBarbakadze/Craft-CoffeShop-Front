@@ -3,7 +3,6 @@ import logo from '../assets/Fotos/Qr-code-scanner.png';
 import { useNavigate } from 'react-router-dom';
 import useScrollHeader from '../hooks/UseScrollHeader';
 
-
 const StyledHeader = styled.header `
   display: flex;
   width: 1440px;
@@ -26,14 +25,12 @@ const LogoContainer = styled.div`
   margin-top: 11px;
   margin-left: 102px;
   
-
   img {
     width: 38px;
     height: 38px;
     angle: 0 deg;
     opacity: 1;
     cursor: pointer;
-    
   }
 
   span {
@@ -67,7 +64,6 @@ const NavButton1 = styled.button`
   line-height: 100%;
   letter-spacing: 0%;
   cursor: pointer;
-
   }
 `;
 
@@ -85,9 +81,7 @@ const NavButton2 = styled.button`
   line-height: 100%;
   letter-spacing: 0%;
   cursor: pointer;
-
 `;
-
 
 const Header = () => {
   const navigate = useNavigate();
@@ -106,8 +100,6 @@ const Header = () => {
     </StyledHeader>
   );
 };
-
-
 export default Header;
 
 

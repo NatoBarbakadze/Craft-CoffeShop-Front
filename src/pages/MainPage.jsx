@@ -12,6 +12,5 @@ const MainPage=()=>{
             </CurrencyContextProvider>   
         </>
     ) 
-
 }
 export default MainPage

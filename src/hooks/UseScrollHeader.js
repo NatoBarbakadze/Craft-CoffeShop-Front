@@ -15,5 +15,4 @@ const useScrollHeader = (threshold = 50) => {
 
   return scrolled;
 };
-
 export default useScrollHeader;
