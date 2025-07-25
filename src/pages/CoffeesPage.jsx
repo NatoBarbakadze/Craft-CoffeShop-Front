@@ -8,10 +8,9 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 const Section = styled.section`
-  width: 1217px;
-  height: max-content;
-  margin-left: 137px;
-  margin-bottom: 106px;
+  max-width: 1217px;
+  width: 100%;
+  margin: 0 auto 106px;
 `;
 
 const CoffeeImage = styled.img`
@@ -21,8 +20,6 @@ const CoffeeImage = styled.img`
 `;
 
 const CoffeeGrid = styled.div`
-  width: 1217px;
-  height: max-content;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 55px;
@@ -36,6 +33,7 @@ const CoffeeInfoWrapper = styled.div`
   width: 222px;
   height: 62px;
   padding: 14px 17px 16px 24px;
+
 `;
 
 function CoffeeDisplay() {
@@ -122,10 +120,9 @@ function CoffeeDisplay() {
                 );
               })}
             </CoffeeGrid>
-
       </Section>
-      
     </>
   );
 }
+
 export default CoffeeDisplay;
