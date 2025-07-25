@@ -14,10 +14,10 @@ const LayoutWithHeader = () => (
   </>
 );
 
+
 const LayoutWithoutHeader = () => (
   <main><Outlet /></main>
 );
-
 
 const AppRouter = () => {
   return (
@@ -29,10 +29,11 @@ const AppRouter = () => {
       </Route>
 
       <Route element={<LayoutWithoutHeader />}>
-        <Route path="/coffees/:coffeeId" element={<DetailedCoffeePage />} />
-        <Route path="/ingredients/:ingredientId" element={<DetailedIngredientPage/>}/>
+        <Route path="/coffees/:id" element={<DetailedCoffeePage />} />
+        <Route path="/ingredients/:id" element={<DetailedIngredientPage/>}/>
       </Route>
     </Routes>
   );
 };
+
 export default AppRouter;
