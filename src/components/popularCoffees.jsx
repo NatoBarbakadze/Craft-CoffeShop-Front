@@ -13,20 +13,17 @@ export const coffees = [
   { name: "Caramel Macchiato", img: caramelMacchiatoimg, price: 5.99 },
   { name: "Americano", img: americanoImg, price: 5.99 },
 ];
-
 const Section = styled.section`
-  width: 1217px;
-  height: 560px;
-  margin-left: 137px;
+  max-width: 1217px;
+  width: 100%;
+  margin: 0 auto 106px;
 `;
-
 export const HeaderMini = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 42px;
 `;
-
 export const Title = styled.h2`
   font-family: Inter;
   font-weight: 500;
@@ -45,7 +42,6 @@ export const CurrencyButton = styled.button`
   border-radius: 5px;
   cursor: pointer;
 `;
-
 const CoffeeGrid = styled.div`
   width: 1217px;
   height: 367px;
@@ -53,7 +49,6 @@ const CoffeeGrid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 55px;
 `;
-
 export const CoffeeCard = styled.div`
   background-color: rgba(255, 255, 255, 1);
   border-radius: 5px;
@@ -61,14 +56,13 @@ export const CoffeeCard = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;
-`;
 
+`;
 const CoffeeImage = styled.img`
   width: 100%;
   height: 254px;
   object-fit: cover;
 `;
-
 const CoffeeInfoWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -76,8 +70,8 @@ const CoffeeInfoWrapper = styled.div`
   width: 222px;
   height: 77px;
   padding: 17px 17px 19px 24px;
-`;
 
+`;
 export const CoffeeText = styled.div`
   h4 {
     font-family: Inter;
@@ -85,7 +79,6 @@ export const CoffeeText = styled.div`
     font-size: 16px;
     color: rgba(118, 111, 107, 1);
   }
-
   p {
     font-family: Inter;
     font-weight: 700;
@@ -93,16 +86,17 @@ export const CoffeeText = styled.div`
     color: rgba(119, 74, 71, 1);
   }
 `;
-
 export const QRIcon = styled.img`
   width: 62px;
   height: 62px;
 `;
 
 
+
 const PopularCoffees = () => {
   const { currency, toggleCurrency } = useContext(CurrencyContext);
   const [exchangeRate, setExchangeRate] = useState(undefined);
+
 
   useEffect(() => {
     if (currency === "GEL") {
@@ -149,7 +143,3 @@ const PopularCoffees = () => {
   );
 };
 export default PopularCoffees
-
-
-
-
