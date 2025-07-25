@@ -1,6 +1,7 @@
 import { Route, Routes, Outlet } from "react-router-dom";
 import Header from "../components/header";
 import MainPage from "../pages/MainPage";
+import CoffeesPage from "../pages/CoffeesPage";
 
 
 
@@ -17,6 +18,7 @@ const AppRouter = () => {
     <Routes>
       <Route element={<LayoutWithHeader />}>
         <Route path="/" element={<MainPage />} />
+        <Route path="/coffees" element={<CoffeesPage />} />
       </Route>
     </Routes>
   );
