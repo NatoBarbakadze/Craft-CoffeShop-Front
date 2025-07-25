@@ -7,7 +7,6 @@ import coffeeImg from "../assets/Fotos/cafeMocha.png"
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-
 const Section = styled.section`
   width: 1217px;
   height: max-content;
@@ -37,7 +36,6 @@ const CoffeeInfoWrapper = styled.div`
   width: 222px;
   height: 62px;
   padding: 14px 17px 16px 24px;
-
 `;
 
 function CoffeeDisplay() {
@@ -130,5 +128,4 @@ function CoffeeDisplay() {
     </>
   );
 }
-
 export default CoffeeDisplay;

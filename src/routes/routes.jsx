@@ -3,7 +3,8 @@ import Header from "../components/header";
 import MainPage from "../pages/MainPage";
 import CoffeesPage from "../pages/CoffeesPage";
 import IngredientsPage from "../pages/IngredientsPage";
-
+import DetailedCoffeePage from "../pages/DetailedCoffeePage";
+import DetailedIngredientPage from "../pages/DetailedIngredientPage";
 
 
 const LayoutWithHeader = () => (
@@ -11,6 +12,10 @@ const LayoutWithHeader = () => (
     <Header />
     <main><Outlet /></main>
   </>
+);
+
+const LayoutWithoutHeader = () => (
+  <main><Outlet /></main>
 );
 
 
@@ -22,8 +27,12 @@ const AppRouter = () => {
         <Route path="/coffees" element={<CoffeesPage />} />
         <Route path="/ingredients" element={<IngredientsPage />} />
       </Route>
+
+      <Route element={<LayoutWithoutHeader />}>
+        <Route path="/coffees/:coffeeId" element={<DetailedCoffeePage />} />
+        <Route path="/ingredients/:ingredientId" element={<DetailedIngredientPage/>}/>
+      </Route>
     </Routes>
   );
 };
-
 export default AppRouter;

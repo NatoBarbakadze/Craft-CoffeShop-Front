@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import heroImage from '../assets/Fotos/cover-foto.png';
 import rectangle from '../assets/Fotos/Rectangle.png'
 
-
 export const HeroSection = styled.section`
   position: relative;
   height: 662px;
@@ -16,10 +15,7 @@ export const HeroSection = styled.section`
   color: rgba(240, 238, 237, 1);
   z-index: 1;
   margin: -10px auto 76px;
-
 `;
-
-
 
 const Overlay = styled.div`
   position: absolute;
@@ -31,7 +27,6 @@ const Overlay = styled.div`
   z-index: 0;
 `;
 
-
 export const HeroContent = styled.div`
   position: relative;
   width: 649px;
@@ -39,8 +34,6 @@ export const HeroContent = styled.div`
   margin-top: 176px;
   display: flex;
   flex-direction: column;
-
-
 
   hr {
     width: 496px;
@@ -76,8 +69,6 @@ export const HeroContent = styled.div`
   
 `
 
-
-
 const Hero = () => {
   return (
     <HeroSection>
@@ -92,5 +83,4 @@ const Hero = () => {
     </HeroSection>
   );
 };
-
 export default Hero;

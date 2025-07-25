@@ -12,9 +12,7 @@ const CurrencyContextProvider=({children})=>{
         <CurrencyContext.Provider value={{currency, toggleCurrency}}>
             {children}
         </CurrencyContext.Provider>
-
     )
-
 }
 export default CurrencyContextProvider
 
