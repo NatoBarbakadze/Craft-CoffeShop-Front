@@ -1,14 +1,11 @@
-// import Hero from "../components/Hero"
-// import PopularCoffees, { coffees } from "../components/popularCoffees"
-// import CurrencyContextProvider from "../contexts/CurrencyContext"
+import Hero from "../components/Hero"
+
 
 const MainPage=()=>{
     return (
         <>
-            {/* <Hero/>
-            <CurrencyContextProvider>
-                <PopularCoffees coffees={coffees}/>
-            </CurrencyContextProvider>            */}
+            <Hero/>
+           
            
         </>
        
