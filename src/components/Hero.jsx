@@ -5,7 +5,7 @@ import rectangle from '../assets/Fotos/Rectangle.png'
 export const HeroSection = styled.section`
   position: relative;
   height: 662px;
-  max-width: 1440px;
+  max-width: 100%;
   background-image: url(${heroImage});
   background-size: cover;
   background-position: center;
